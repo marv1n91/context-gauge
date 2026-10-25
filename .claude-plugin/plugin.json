@@ -1,0 +1,51 @@
+{
+  "name": "context-gauge",
+  "version": "0.2.0",
+  "author": { "name": "marv1n91" },
+  "description": "Панель над полем ввода: контекст и автосжатие, лимиты 5 ч и недели, скорость ответа, расходы сессии и всего",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "showContext": {
+      "type": "boolean",
+      "title": "Панель: строка «Контекст»",
+      "description": "Заполненность контекста и сколько осталось до автосжатия",
+      "default": true
+    },
+    "showLimits": {
+      "type": "boolean",
+      "title": "Панель: строка «Лимиты»",
+      "description": "Лимиты на 5 часов и на неделю, время до сброса",
+      "default": true
+    },
+    "showSpeed": {
+      "type": "boolean",
+      "title": "Панель: строка «Скорость»",
+      "description": "Скорость ответа в токенах в секунду и среднее за сессию",
+      "default": true
+    },
+    "showSession": {
+      "type": "boolean",
+      "title": "Панель: строка «Сессия»",
+      "description": "Стоимость и токены текущей сессии, сколько ещё тёплый кэш",
+      "default": true
+    },
+    "showTotal": {
+      "type": "boolean",
+      "title": "Панель: строка «Всего»",
+      "description": "Примерные расходы за все сессии и за сегодня (нужен Node.js)",
+      "default": true
+    },
+    "showWarnings": {
+      "type": "boolean",
+      "title": "Панель: предупреждения о темпе",
+      "description": "Плашка, если при текущем темпе лимит закончится раньше сброса",
+      "default": true
+    },
+    "showStatusLine": {
+      "type": "boolean",
+      "title": "Панель: строка состояния",
+      "description": "Короткая сводка в строке состояния под полем ввода",
+      "default": true
+    }
+  }
+}

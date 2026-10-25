@@ -1,0 +1,12 @@
+{
+  "name": "context-gauge",
+  "owner": { "name": "marv1n91" },
+  "description": "Плагин context-gauge для Claude Code",
+  "plugins": [
+    {
+      "name": "context-gauge",
+      "source": "./",
+      "description": "Панель над полем ввода: контекст и автосжатие, лимиты 5 ч и недели, скорость ответа, расходы сессии и всего"
+    }
+  ]
+}
